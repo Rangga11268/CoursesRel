@@ -1,16 +1,34 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
+import { navLinks } from "../data/index";
+import { NavLink } from "react-router-dom";
 
 export default function NavbarComponent() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand className="fs-3 fw-bold" href="#home">Darell.</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
+          <Nav className="mx-auto text-center">
+            {navLinks.map((nav) => {
+              return (
+                <div className="nav-link" key={nav.id}>
+                  <NavLink
+                    to={nav.path}
+                    className={({ isActive, isPending }) =>
+                      isPending ? "pending" : isActive ? "active" : ""
+                    }
+                    end
+                  >
+                    {nav.text}
+                  </NavLink>
+                </div>
+              );
+            })}
           </Nav>
+          <div className="text-center">
+            <button className="btn btn-outline-danger rounded-1">Join with us</button>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
