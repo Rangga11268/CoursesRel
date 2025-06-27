@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import NavbarComponent from "./components/NavbarComponent";
+import FooterComponent from "./components/FooterComponent";
 import HomePage from "./pages/HomePage";
 import KelasPage from "./pages/KelasPage";
 import TestimonialPage from "./pages/TestimonialPage";
@@ -11,7 +11,7 @@ import SyaratPage from "./pages/SyaratPage";
 export default function App() {
   return (
     <div>
-      <Navbar />
+      <NavbarComponent />
       <Routes>
         <Route path="/" Component={HomePage} />
         <Route path="/kelas" Component={KelasPage} />
@@ -19,7 +19,7 @@ export default function App() {
         <Route path="/Faq" Component={FaqPage} />
         <Route path="/Syarat" Component={SyaratPage} />
       </Routes>
-      <Footer />
+      <FooterComponent />
     </div>
   );
 }
