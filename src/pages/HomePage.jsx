@@ -3,6 +3,7 @@ import HeroImage from "../assets/img/hero.png";
 import { kelasTerbaru, dataSwiper } from "../data";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
+import FaqComponent from "../components/FaqComponent";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -142,6 +143,9 @@ export default function HomePage() {
           </Row>
         </Container>
       </div>
+      {/* Faq Component */}
+      <FaqComponent />
+      {/* Faq Component end */}
     </div>
   );
 }
