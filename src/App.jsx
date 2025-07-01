@@ -19,7 +19,7 @@ export default function App() {
         <Route path="/Faq" Component={FaqPage} />
         <Route path="/Syarat" Component={SyaratPage} />
       </Routes>
-      {/* <FooterComponent /> */}
+      <FooterComponent />
     </div>
   );
 }
