@@ -350,6 +350,19 @@ header {
 
 /* Testimonial end */
 
+/* Syarat Keten */
+
+.syarat-page .syarat-ketentuan {
+  padding-top: 150px;
+  background-color: var(--primary-color);
+}
+
+.syarat-page .syarat-ketentuan p {
+  line-height: 2;
+}
+
+/* Syarat Keten end */
+
 /* FAQ */
 .faq {
   padding-top: 100px;
