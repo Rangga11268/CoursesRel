@@ -264,6 +264,7 @@ header {
 
 .kelas-page .kelas .row:nth-child(1) h1 {
   color: var(--color-text);
+  --animate-deley: 0.5s;
 }
 
 .kelas-page .kelas .row:nth-child(1) p {

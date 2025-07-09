@@ -60,7 +60,13 @@ export default function HomePage() {
           <Row>
             {kelasTerbaru.map((kelas) => {
               return (
-                <Col key={kelas.id} className="shadow rounded">
+                <Col
+                  key={kelas.id}
+                  className="shadow rounded"
+                  data-aos="fade-up-right"
+                  data-aos-duration="1000"
+                  data-aos-delay={kelas.delay}
+                >
                   <img
                     src={kelas.image}
                     alt="unsplash.com"
@@ -88,6 +94,8 @@ export default function HomePage() {
             <Col className="text-center">
               <button
                 className="btn btn-success rounded-5 btn-lg"
+                data-aos="fade-up-left"
+                data-aos-duration="1000"
                 onClick={() => navigate("/kelas")}
               >
                 Lihat Semua kelas{" "}

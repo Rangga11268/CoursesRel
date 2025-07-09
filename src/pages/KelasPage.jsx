@@ -9,8 +9,10 @@ export default function KelasPage() {
         <Container>
           <Row>
             <Col>
-              <h1 className="fw-bold text-center">Semua Kelas</h1>
-              <p className="text-center">
+              <h1 className="fw-bold text-center animate__animated animate__fadeInUp animate__deley-1s">
+                Semua Kelas
+              </h1>
+              <p className="text-center animate__animated animate__fadeInUp animate__deley-1s">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
                 voluptas.
               </p>
@@ -19,7 +21,13 @@ export default function KelasPage() {
           <Row>
             {semuaKelas.map((kelas) => {
               return (
-                <Col key={kelas.id} className="shadow rounded">
+                <Col
+                  key={kelas.id}
+                  className="shadow rounded"
+                  data-aos="fade-up-right"
+                  data-aos-duration="1000"
+                  data-aos-delay={kelas.delay}
+                >
                   <img
                     src={kelas.image}
                     alt="unsplash.com"
