@@ -264,7 +264,7 @@ header {
 
 .kelas-page .kelas .row:nth-child(1) h1 {
   color: var(--color-text);
-  --animate-deley: 0.5s;
+  --animate-delay: 0.5s;
 }
 
 .kelas-page .kelas .row:nth-child(1) p {
@@ -316,6 +316,7 @@ header {
 
 .testimonial-page .testimonial .row:nth-child(1) h1 {
   color: var(--color-text);
+  --animate-delay: 0.5s;
 }
 
 .testimonial-page .testimonial .row:nth-child(1) p {
@@ -366,6 +367,10 @@ header {
   background-color: var(--primary-color);
 }
 
+.syarat-page .syarat-ketentuan h1 {
+  --animate-delay: 0.5s;
+}
+
 .syarat-page .syarat-ketentuan p {
   line-height: 2;
 }
@@ -381,6 +386,7 @@ header {
 
 .faq h2 {
   color: var(--color-text);
+  --animate-delay: 0.5s;
 }
 
 .faq .accordion .accordion-button {

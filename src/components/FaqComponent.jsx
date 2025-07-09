@@ -7,7 +7,7 @@ export default function FaqComponent() {
       <Container>
         <Row>
           <Col>
-            <h2 className="text-center fw-bold">
+            <h2 className="text-center fw-bold animate__animated animate__fadeInUp animate__deley-1s">
               Pertanyaan Yang Sering Di Tanyakan
             </h2>
           </Col>

@@ -9,8 +9,10 @@ export default function TestimonialPage() {
         <Container>
           <Row>
             <Col>
-              <h1 className="fw-bold text-center">Semua Testimonial</h1>
-              <p className="text-center">
+              <h1 className="fw-bold text-center animate__animated animate__fadeInUp animate__deley-1s">
+                Semua Testimonial
+              </h1>
+              <p className="text-center animate__animated animate__fadeInUp animate__deley-1s">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Eveniet, odit?
               </p>
